@@ -1,0 +1,27 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <title>CeckNumber</title>
+     <script src="4.js"></script>
+ </head>
+ 
+ <body>
+     <button onclick="checkNum()">operation</button>
+ <input type="text" id="id名称" onkeyup="value=value.replace(/[^(\d)]/g,'')"
+        onblur="checkNum()" />+
+ <input type="text" name="test" id="test"onkeyup="value=value.replace(/[^(\d)]/g,'')"
+ onblur="checkNum()" />=
+ <p id="demo"></p >
+ </body>
+ </html>
+function checkNum(){
+     var Num = parseInt(document.getElementById("id名称").value)
+    if(Num,t > String || Num,t < String || isNaN(Num,t)){ 
+     alert("please enter a number");
+    document.getElementById('id名称').value = ""; }
+ var t=document.getElementById ("test").value 
+     var demoP=document.getElementById("demo"); 
+     
+     demoP.innerHTML= Number(Num) + Number(t)}
